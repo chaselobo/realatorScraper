@@ -1,7 +1,7 @@
 # Target Geography
-DEFAULT_TOWNS = []
+DEFAULT_TOWNS = ["Ridgewood, NJ"]
 
-DEFAULT_ZIPS = []
+DEFAULT_ZIPS = ["07450"]
 
 # Scraping Settings
 DEFAULT_RATE_LIMIT = 1.0  # seconds between requests
