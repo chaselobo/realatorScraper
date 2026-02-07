@@ -19,19 +19,44 @@ class LongAndFosterConnector(BaseConnector):
             context = browser.new_context(user_agent=USER_AGENT)
             page = context.new_page()
 
-            logger.info(f"Scraping Long & Foster URL: {self.base_url}")
-            try:
-                page.goto(self.base_url, timeout=60000)
-                page.wait_for_timeout(3000) # Allow carousel to init
-            except Exception as e:
-                logger.error(f"Failed to load {self.base_url}: {e}")
-                return
-
-            agent_profiles = set()
+            # Generate URLs
+            urls = []
+            for town_input in towns:
+                if "," in town_input:
+                    town, state = [x.strip() for x in town_input.split(",", 1)]
+                    # Try pattern: https://www.longandfoster.com/real-estate-agents/Ridgewood-NJ
+                    slug = f"{town.replace(' ', '-')}-{state}"
+                    urls.append(f"https://www.longandfoster.com/real-estate-agents/{slug}")
             
-            # Using the specific selector from inspection
-            cards = page.locator('article.lf-roster-card.lf-agent')
-            count = cards.count()
+            if not urls:
+                logger.info("No 'Town, State' provided, using default office URL")
+                urls = [self.base_url]
+
+            for url in urls:
+                logger.info(f"Scraping Long & Foster URL: {url}")
+                try:
+                    page.goto(url, timeout=60000)
+                    page.wait_for_timeout(3000) # Allow carousel/list to init
+                    
+                    # Check if valid page
+                    if "404" in page.title() or "Page Not Found" in page.content():
+                        logger.warning(f"URL {url} returned 404/Not Found. Skipping.")
+                        continue
+                except Exception as e:
+                    logger.error(f"Failed to load {url}: {e}")
+                    continue
+
+                agent_profiles = set()
+                
+                # Selector might differ on search pages vs office pages
+                # Office page: article.lf-roster-card.lf-agent
+                # Search page: check for alternatives
+                cards = page.locator('article.lf-roster-card.lf-agent')
+                if cards.count() == 0:
+                    # Try generic search result card
+                    cards = page.locator('.agent-card, .roster-card')
+                
+                count = cards.count()
             logger.info(f"Found {count} L&F agent cards (raw)")
             
             profiles_to_visit = []
