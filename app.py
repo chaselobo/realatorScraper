@@ -1,6 +1,16 @@
 import streamlit as st
 import pandas as pd
+import subprocess
+import os
 from src.config import DEFAULT_TOWNS, DEFAULT_ZIPS, DEFAULT_MAX_PAGES
+
+# Ensure Playwright browsers are installed
+if not os.path.exists(os.path.expanduser("~/.cache/ms-playwright")):
+    try:
+        subprocess.run(["playwright", "install", "chromium"], check=True)
+    except Exception as e:
+        st.error(f"Failed to install Playwright browsers: {e}")
+
 from src.scraper_manager import ScraperManager
 from src.connectors.compass import CompassConnector
 from src.connectors.coldwell_banker import CBConnector
