@@ -1,0 +1,337 @@
+2026-02-06 18:03:20.740 | INFO     | src.scraper_manager:run:23 - Starting scrape for 13 towns and 12 zips.
+2026-02-06 18:03:20.740 | INFO     | src.scraper_manager:run:26 - Running connector: Compass
+2026-02-06 18:03:21.343 | INFO     | src.connectors.compass:scrape:26 - Scraping Compass URL: https://www.compass.com/agents/locations/main-line-bryn-mawr-pa/15715/
+2026-02-06 18:03:22.371 | INFO     | src.connectors.compass:scrape:40 - Found 280 agents so far...
+2026-02-06 18:03:23.728 | INFO     | src.connectors.compass:scrape:61 - Parsing 280 agents from https://www.compass.com/agents/locations/main-line-bryn-mawr-pa/15715/
+2026-02-06 18:03:23.758 | DEBUG    | src.scraper_manager:run:30 - Collected: Lisie Abrams
+2026-02-06 18:03:23.764 | DEBUG    | src.scraper_manager:run:30 - Collected: Lisie Abrams
+2026-02-06 18:03:23.776 | DEBUG    | src.scraper_manager:run:30 - Collected: Adam Dyer & Jeff Nixon Team
+2026-02-06 18:03:23.780 | DEBUG    | src.scraper_manager:run:30 - Collected: Adam Dyer & Jeff Nixon Team
+2026-02-06 18:03:23.791 | DEBUG    | src.scraper_manager:run:30 - Collected: Sean Adams
+2026-02-06 18:03:23.794 | DEBUG    | src.scraper_manager:run:30 - Collected: Sean Adams
+2026-02-06 18:03:23.803 | DEBUG    | src.scraper_manager:run:30 - Collected: Jamie Adler
+2026-02-06 18:03:23.806 | DEBUG    | src.scraper_manager:run:30 - Collected: Jamie Adler
+2026-02-06 18:03:23.815 | DEBUG    | src.scraper_manager:run:30 - Collected: Jack Aezen
+2026-02-06 18:03:23.818 | DEBUG    | src.scraper_manager:run:30 - Collected: Jack Aezen
+2026-02-06 18:03:23.825 | DEBUG    | src.scraper_manager:run:30 - Collected: Esther Aezen
+2026-02-06 18:03:23.828 | DEBUG    | src.scraper_manager:run:30 - Collected: Esther Aezen
+2026-02-06 18:03:23.836 | DEBUG    | src.scraper_manager:run:30 - Collected: Aimee Alexander
+2026-02-06 18:03:23.839 | DEBUG    | src.scraper_manager:run:30 - Collected: Aimee Alexander
+2026-02-06 18:03:23.847 | DEBUG    | src.scraper_manager:run:30 - Collected: Frank Ambrose
+2026-02-06 18:03:23.850 | DEBUG    | src.scraper_manager:run:30 - Collected: Frank Ambrose
+2026-02-06 18:03:23.858 | DEBUG    | src.scraper_manager:run:30 - Collected: Leigh Anne Ambrose
+2026-02-06 18:03:23.861 | DEBUG    | src.scraper_manager:run:30 - Collected: Leigh Anne Ambrose
+2026-02-06 18:03:23.868 | DEBUG    | src.scraper_manager:run:30 - Collected: Anne Townes Team
+2026-02-06 18:03:23.871 | DEBUG    | src.scraper_manager:run:30 - Collected: Anne Townes Team
+2026-02-06 18:03:23.879 | DEBUG    | src.scraper_manager:run:30 - Collected: Matt Aragona
+2026-02-06 18:03:23.881 | DEBUG    | src.scraper_manager:run:30 - Collected: Matt Aragona
+2026-02-06 18:03:23.889 | DEBUG    | src.scraper_manager:run:30 - Collected: Jordan Arnold
+2026-02-06 18:03:23.892 | DEBUG    | src.scraper_manager:run:30 - Collected: Jordan Arnold
+2026-02-06 18:03:23.900 | DEBUG    | src.scraper_manager:run:30 - Collected: RC Atlee
+2026-02-06 18:03:23.902 | DEBUG    | src.scraper_manager:run:30 - Collected: RC Atlee
+2026-02-06 18:03:23.909 | DEBUG    | src.scraper_manager:run:30 - Collected: Jennifer Attix
+2026-02-06 18:03:23.912 | DEBUG    | src.scraper_manager:run:30 - Collected: Jennifer Attix
+2026-02-06 18:03:23.919 | DEBUG    | src.scraper_manager:run:30 - Collected: Stephanie Barbera
+2026-02-06 18:03:23.922 | DEBUG    | src.scraper_manager:run:30 - Collected: Stephanie Barbera
+2026-02-06 18:03:23.930 | DEBUG    | src.scraper_manager:run:30 - Collected: Randy Barker
+2026-02-06 18:03:23.932 | DEBUG    | src.scraper_manager:run:30 - Collected: Randy Barker
+2026-02-06 18:03:23.939 | DEBUG    | src.scraper_manager:run:30 - Collected: Jennifer Barker
+2026-02-06 18:03:23.942 | DEBUG    | src.scraper_manager:run:30 - Collected: Jennifer Barker
+2026-02-06 18:03:23.950 | DEBUG    | src.scraper_manager:run:30 - Collected: Maggie Barson
+2026-02-06 18:03:23.953 | DEBUG    | src.scraper_manager:run:30 - Collected: Maggie Barson
+2026-02-06 18:03:23.960 | DEBUG    | src.scraper_manager:run:30 - Collected: Giselle Bartolo Watmuff
+2026-02-06 18:03:23.963 | DEBUG    | src.scraper_manager:run:30 - Collected: Giselle Bartolo Watmuff
+2026-02-06 18:03:23.970 | DEBUG    | src.scraper_manager:run:30 - Collected: Amanda Barton
+2026-02-06 18:03:23.973 | DEBUG    | src.scraper_manager:run:30 - Collected: Amanda Barton
+2026-02-06 18:03:23.980 | DEBUG    | src.scraper_manager:run:30 - Collected: Constance Berg
+2026-02-06 18:03:23.982 | DEBUG    | src.scraper_manager:run:30 - Collected: Constance Berg
+2026-02-06 18:03:23.989 | DEBUG    | src.scraper_manager:run:30 - Collected: Jessa Bernstein
+2026-02-06 18:03:23.992 | DEBUG    | src.scraper_manager:run:30 - Collected: Jessa Bernstein
+2026-02-06 18:03:23.999 | DEBUG    | src.scraper_manager:run:30 - Collected: Brian Best
+2026-02-06 18:03:24.001 | DEBUG    | src.scraper_manager:run:30 - Collected: Brian Best
+2026-02-06 18:03:24.008 | DEBUG    | src.scraper_manager:run:30 - Collected: Katherine Binnion
+2026-02-06 18:03:24.011 | DEBUG    | src.scraper_manager:run:30 - Collected: Katherine Binnion
+2026-02-06 18:03:24.018 | DEBUG    | src.scraper_manager:run:30 - Collected: Jeff City Block
+2026-02-06 18:03:24.021 | DEBUG    | src.scraper_manager:run:30 - Collected: Jeff City Block
+2026-02-06 18:03:24.028 | DEBUG    | src.scraper_manager:run:30 - Collected: Mia Bloomfield
+2026-02-06 18:03:24.030 | DEBUG    | src.scraper_manager:run:30 - Collected: Mia Bloomfield
+2026-02-06 18:03:24.037 | DEBUG    | src.scraper_manager:run:30 - Collected: Ashley Bonelli
+2026-02-06 18:03:24.040 | DEBUG    | src.scraper_manager:run:30 - Collected: Ashley Bonelli
+2026-02-06 18:03:24.047 | DEBUG    | src.scraper_manager:run:30 - Collected: Olivia Boswell
+2026-02-06 18:03:24.049 | DEBUG    | src.scraper_manager:run:30 - Collected: Olivia Boswell
+2026-02-06 18:03:24.057 | DEBUG    | src.scraper_manager:run:30 - Collected: Boswell, Foster & Young Team
+2026-02-06 18:03:24.060 | DEBUG    | src.scraper_manager:run:30 - Collected: Boswell, Foster & Young Team
+2026-02-06 18:03:24.067 | DEBUG    | src.scraper_manager:run:30 - Collected: Jennifer Braun
+2026-02-06 18:03:24.069 | DEBUG    | src.scraper_manager:run:30 - Collected: Jennifer Braun
+2026-02-06 18:03:24.077 | DEBUG    | src.scraper_manager:run:30 - Collected: Brooke Nelson-Grohol Team
+2026-02-06 18:03:24.079 | DEBUG    | src.scraper_manager:run:30 - Collected: Brooke Nelson-Grohol Team
+2026-02-06 18:03:24.087 | DEBUG    | src.scraper_manager:run:30 - Collected: Janice Brown
+2026-02-06 18:03:24.090 | DEBUG    | src.scraper_manager:run:30 - Collected: Janice Brown
+2026-02-06 18:03:24.103 | DEBUG    | src.scraper_manager:run:30 - Collected: Beth Bukata
+2026-02-06 18:03:24.106 | DEBUG    | src.scraper_manager:run:30 - Collected: Beth Bukata
+2026-02-06 18:03:24.113 | DEBUG    | src.scraper_manager:run:30 - Collected: Anna Bumbera
+2026-02-06 18:03:24.115 | DEBUG    | src.scraper_manager:run:30 - Collected: Anna Bumbera
+2026-02-06 18:03:24.122 | DEBUG    | src.scraper_manager:run:30 - Collected: Lisa Burns
+2026-02-06 18:03:24.125 | DEBUG    | src.scraper_manager:run:30 - Collected: Lisa Burns
+2026-02-06 18:03:24.132 | DEBUG    | src.scraper_manager:run:30 - Collected: Floranne Burns
+2026-02-06 18:03:24.134 | DEBUG    | src.scraper_manager:run:30 - Collected: Floranne Burns
+2026-02-06 18:03:24.141 | DEBUG    | src.scraper_manager:run:30 - Collected: Linda Calio
+2026-02-06 18:03:24.144 | DEBUG    | src.scraper_manager:run:30 - Collected: Linda Calio
+2026-02-06 18:03:24.151 | DEBUG    | src.scraper_manager:run:30 - Collected: Patrick Campbell
+2026-02-06 18:03:24.154 | DEBUG    | src.scraper_manager:run:30 - Collected: Patrick Campbell
+2026-02-06 18:03:24.160 | DEBUG    | src.scraper_manager:run:30 - Collected: Kerry Carr
+2026-02-06 18:03:24.163 | DEBUG    | src.scraper_manager:run:30 - Collected: Kerry Carr
+2026-02-06 18:03:24.172 | DEBUG    | src.scraper_manager:run:30 - Collected: Casa Collaborative Group - DE
+2026-02-06 18:03:24.175 | DEBUG    | src.scraper_manager:run:30 - Collected: Casa Collaborative Group - DE
+2026-02-06 18:03:24.178 | INFO     | src.connectors.compass:scrape:26 - Scraping Compass URL: https://www.compass.com/agents/locations/philadelphia-pa/14527/
+2026-02-06 18:03:24.536 | INFO     | src.connectors.compass:scrape:40 - Found 280 agents so far...
+2026-02-06 18:03:25.879 | INFO     | src.connectors.compass:scrape:61 - Parsing 280 agents from https://www.compass.com/agents/locations/philadelphia-pa/14527/
+2026-02-06 18:03:25.899 | DEBUG    | src.scraper_manager:run:30 - Collected: Joleen Abbinante
+2026-02-06 18:03:25.907 | DEBUG    | src.scraper_manager:run:30 - Collected: Joleen Abbinante
+2026-02-06 18:03:25.921 | DEBUG    | src.scraper_manager:run:30 - Collected: Amir Abdelkaoui
+2026-02-06 18:03:25.925 | DEBUG    | src.scraper_manager:run:30 - Collected: Amir Abdelkaoui
+2026-02-06 18:03:25.934 | DEBUG    | src.scraper_manager:run:30 - Collected: Lisie Abrams
+2026-02-06 18:03:25.938 | DEBUG    | src.scraper_manager:run:30 - Collected: Lisie Abrams
+2026-02-06 18:03:25.946 | DEBUG    | src.scraper_manager:run:30 - Collected: Cydney Actie
+2026-02-06 18:03:25.948 | DEBUG    | src.scraper_manager:run:30 - Collected: Cydney Actie
+2026-02-06 18:03:25.956 | DEBUG    | src.scraper_manager:run:30 - Collected: Adam Dyer & Jeff Nixon Team
+2026-02-06 18:03:25.958 | DEBUG    | src.scraper_manager:run:30 - Collected: Adam Dyer & Jeff Nixon Team
+2026-02-06 18:03:25.965 | DEBUG    | src.scraper_manager:run:30 - Collected: Sean Adams
+2026-02-06 18:03:25.968 | DEBUG    | src.scraper_manager:run:30 - Collected: Sean Adams
+2026-02-06 18:03:25.975 | DEBUG    | src.scraper_manager:run:30 - Collected: Jack Aezen
+2026-02-06 18:03:25.977 | DEBUG    | src.scraper_manager:run:30 - Collected: Jack Aezen
+2026-02-06 18:03:25.984 | DEBUG    | src.scraper_manager:run:30 - Collected: Esther Aezen
+2026-02-06 18:03:25.987 | DEBUG    | src.scraper_manager:run:30 - Collected: Esther Aezen
+2026-02-06 18:03:25.994 | DEBUG    | src.scraper_manager:run:30 - Collected: Reda Akbil
+2026-02-06 18:03:25.997 | DEBUG    | src.scraper_manager:run:30 - Collected: Reda Akbil
+2026-02-06 18:03:26.004 | DEBUG    | src.scraper_manager:run:30 - Collected: Scott Aland
+2026-02-06 18:03:26.006 | DEBUG    | src.scraper_manager:run:30 - Collected: Scott Aland
+2026-02-06 18:03:26.014 | DEBUG    | src.scraper_manager:run:30 - Collected: Nursal Alberici
+2026-02-06 18:03:26.017 | DEBUG    | src.scraper_manager:run:30 - Collected: Nursal Alberici
+2026-02-06 18:03:26.023 | DEBUG    | src.scraper_manager:run:30 - Collected: Lindsay Alexander
+2026-02-06 18:03:26.026 | DEBUG    | src.scraper_manager:run:30 - Collected: Lindsay Alexander
+2026-02-06 18:03:26.033 | DEBUG    | src.scraper_manager:run:30 - Collected: Alexander Shulzhenko Team - PA
+2026-02-06 18:03:26.035 | DEBUG    | src.scraper_manager:run:30 - Collected: Alexander Shulzhenko Team - PA
+2026-02-06 18:03:26.042 | DEBUG    | src.scraper_manager:run:30 - Collected: Josh Allen
+2026-02-06 18:03:26.045 | DEBUG    | src.scraper_manager:run:30 - Collected: Josh Allen
+2026-02-06 18:03:26.051 | DEBUG    | src.scraper_manager:run:30 - Collected: Leigh Anne Ambrose
+2026-02-06 18:03:26.054 | DEBUG    | src.scraper_manager:run:30 - Collected: Leigh Anne Ambrose
+2026-02-06 18:03:26.061 | DEBUG    | src.scraper_manager:run:30 - Collected: Matt Aragona
+2026-02-06 18:03:26.064 | DEBUG    | src.scraper_manager:run:30 - Collected: Matt Aragona
+2026-02-06 18:03:26.071 | DEBUG    | src.scraper_manager:run:30 - Collected: Jordan Arnold
+2026-02-06 18:03:26.073 | DEBUG    | src.scraper_manager:run:30 - Collected: Jordan Arnold
+2026-02-06 18:03:26.080 | DEBUG    | src.scraper_manager:run:30 - Collected: RC Atlee
+2026-02-06 18:03:26.083 | DEBUG    | src.scraper_manager:run:30 - Collected: RC Atlee
+2026-02-06 18:03:26.090 | DEBUG    | src.scraper_manager:run:30 - Collected: Jennifer Attix
+2026-02-06 18:03:26.092 | DEBUG    | src.scraper_manager:run:30 - Collected: Jennifer Attix
+2026-02-06 18:03:26.099 | DEBUG    | src.scraper_manager:run:30 - Collected: Melissa Avivi
+2026-02-06 18:03:26.101 | DEBUG    | src.scraper_manager:run:30 - Collected: Melissa Avivi
+2026-02-06 18:03:26.109 | DEBUG    | src.scraper_manager:run:30 - Collected: Daniel Baer
+2026-02-06 18:03:26.112 | DEBUG    | src.scraper_manager:run:30 - Collected: Daniel Baer
+2026-02-06 18:03:26.119 | DEBUG    | src.scraper_manager:run:30 - Collected: Jennifer Baer
+2026-02-06 18:03:26.122 | DEBUG    | src.scraper_manager:run:30 - Collected: Jennifer Baer
+2026-02-06 18:03:26.129 | DEBUG    | src.scraper_manager:run:30 - Collected: Chris Baker
+2026-02-06 18:03:26.131 | DEBUG    | src.scraper_manager:run:30 - Collected: Chris Baker
+2026-02-06 18:03:26.138 | DEBUG    | src.scraper_manager:run:30 - Collected: Adam J. Baldwin
+2026-02-06 18:03:26.141 | DEBUG    | src.scraper_manager:run:30 - Collected: Adam J. Baldwin
+2026-02-06 18:03:26.148 | DEBUG    | src.scraper_manager:run:30 - Collected: Bill Ball
+2026-02-06 18:03:26.151 | DEBUG    | src.scraper_manager:run:30 - Collected: Bill Ball
+2026-02-06 18:03:26.157 | DEBUG    | src.scraper_manager:run:30 - Collected: Brian Barker
+2026-02-06 18:03:26.160 | DEBUG    | src.scraper_manager:run:30 - Collected: Brian Barker
+2026-02-06 18:03:26.167 | DEBUG    | src.scraper_manager:run:30 - Collected: Randy Barker
+2026-02-06 18:03:26.169 | DEBUG    | src.scraper_manager:run:30 - Collected: Randy Barker
+2026-02-06 18:03:26.176 | DEBUG    | src.scraper_manager:run:30 - Collected: Greg Barnaby
+2026-02-06 18:03:26.179 | DEBUG    | src.scraper_manager:run:30 - Collected: Greg Barnaby
+2026-02-06 18:03:26.187 | DEBUG    | src.scraper_manager:run:30 - Collected: Benjamin Barnett
+2026-02-06 18:03:26.190 | DEBUG    | src.scraper_manager:run:30 - Collected: Benjamin Barnett
+2026-02-06 18:03:26.197 | DEBUG    | src.scraper_manager:run:30 - Collected: Cherryblossom Barrett
+2026-02-06 18:03:26.200 | DEBUG    | src.scraper_manager:run:30 - Collected: Cherryblossom Barrett
+2026-02-06 18:03:26.208 | DEBUG    | src.scraper_manager:run:30 - Collected: Maggie Barson
+2026-02-06 18:03:26.210 | DEBUG    | src.scraper_manager:run:30 - Collected: Maggie Barson
+2026-02-06 18:03:26.217 | DEBUG    | src.scraper_manager:run:30 - Collected: Giselle Bartolo Watmuff
+2026-02-06 18:03:26.220 | DEBUG    | src.scraper_manager:run:30 - Collected: Giselle Bartolo Watmuff
+2026-02-06 18:03:26.227 | DEBUG    | src.scraper_manager:run:30 - Collected: Brock Baxter
+2026-02-06 18:03:26.229 | DEBUG    | src.scraper_manager:run:30 - Collected: Brock Baxter
+2026-02-06 18:03:26.236 | DEBUG    | src.scraper_manager:run:30 - Collected: Barri Beckman
+2026-02-06 18:03:26.238 | DEBUG    | src.scraper_manager:run:30 - Collected: Barri Beckman
+2026-02-06 18:03:26.245 | DEBUG    | src.scraper_manager:run:30 - Collected: Jaime Bedard
+2026-02-06 18:03:26.247 | DEBUG    | src.scraper_manager:run:30 - Collected: Jaime Bedard
+2026-02-06 18:03:26.254 | DEBUG    | src.scraper_manager:run:30 - Collected: Madison Bell
+2026-02-06 18:03:26.257 | DEBUG    | src.scraper_manager:run:30 - Collected: Madison Bell
+2026-02-06 18:03:26.273 | DEBUG    | src.scraper_manager:run:30 - Collected: Bruce Benjamin
+2026-02-06 18:03:26.275 | DEBUG    | src.scraper_manager:run:30 - Collected: Bruce Benjamin
+2026-02-06 18:03:26.282 | DEBUG    | src.scraper_manager:run:30 - Collected: Constance Berg
+2026-02-06 18:03:26.285 | DEBUG    | src.scraper_manager:run:30 - Collected: Constance Berg
+2026-02-06 18:03:26.291 | DEBUG    | src.scraper_manager:run:30 - Collected: Jessa Bernstein
+2026-02-06 18:03:26.294 | DEBUG    | src.scraper_manager:run:30 - Collected: Jessa Bernstein
+2026-02-06 18:03:26.300 | DEBUG    | src.scraper_manager:run:30 - Collected: Alaina Bernstein
+2026-02-06 18:03:26.303 | DEBUG    | src.scraper_manager:run:30 - Collected: Alaina Bernstein
+2026-02-06 18:03:26.332 | INFO     | src.scraper_manager:run:34 - Total raw agents collected: 160
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Lisie Abrams
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Adam Dyer & Jeff Nixon Team
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Sean Adams
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Jamie Adler
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Jack Aezen
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Esther Aezen
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Aimee Alexander
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Frank Ambrose
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Leigh Anne Ambrose
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Anne Townes Team
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Matt Aragona
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Jordan Arnold
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: RC Atlee
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Jennifer Attix
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Stephanie Barbera
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Randy Barker
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Jennifer Barker
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Maggie Barson
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Giselle Bartolo Watmuff
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Amanda Barton
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Constance Berg
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Jessa Bernstein
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Brian Best
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Katherine Binnion
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Jeff City Block
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Mia Bloomfield
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Ashley Bonelli
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Olivia Boswell
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Boswell, Foster & Young Team
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Jennifer Braun
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Brooke Nelson-Grohol Team
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Janice Brown
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Beth Bukata
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Anna Bumbera
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Lisa Burns
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Floranne Burns
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Linda Calio
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Patrick Campbell
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Kerry Carr
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Casa Collaborative Group - DE
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Joleen Abbinante
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Amir Abdelkaoui
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Lisie Abrams
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Lisie Abrams
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Cydney Actie
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Adam Dyer & Jeff Nixon Team
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Adam Dyer & Jeff Nixon Team
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Sean Adams
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Sean Adams
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Jack Aezen
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Jack Aezen
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Esther Aezen
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Esther Aezen
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Reda Akbil
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Scott Aland
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Nursal Alberici
+2026-02-06 18:03:26.332 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Lindsay Alexander
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Alexander Shulzhenko Team - PA
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Josh Allen
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Leigh Anne Ambrose
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Leigh Anne Ambrose
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Matt Aragona
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Matt Aragona
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Jordan Arnold
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Jordan Arnold
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: RC Atlee
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: RC Atlee
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Jennifer Attix
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Jennifer Attix
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Melissa Avivi
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Daniel Baer
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Jennifer Baer
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Chris Baker
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Adam J. Baldwin
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Bill Ball
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Brian Barker
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Randy Barker
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Randy Barker
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Greg Barnaby
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Benjamin Barnett
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Cherryblossom Barrett
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Maggie Barson
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Maggie Barson
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Giselle Bartolo Watmuff
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Giselle Bartolo Watmuff
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Brock Baxter
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Barri Beckman
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Jaime Bedard
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Madison Bell
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Bruce Benjamin
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Constance Berg
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Constance Berg
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Jessa Bernstein
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Jessa Bernstein
+2026-02-06 18:03:26.333 | DEBUG    | src.scraper_manager:deduplicate:60 - Duplicate filtered: Alaina Bernstein
+2026-02-06 18:03:26.333 | INFO     | src.scraper_manager:deduplicate:63 - Unique agents after deduplication: 65
+2026-02-06 18:03:26.335 | INFO     | src.scraper_manager:save_csv:76 - Saved 65 agents to test_contacts.csv
+2026-02-06 18:28:13.695 | INFO     | src.scraper_manager:run:23 - Starting scrape for 1 towns and 12 zips.
+2026-02-06 18:28:13.695 | INFO     | src.scraper_manager:run:26 - Running connector: ColdwellBanker
+2026-02-06 18:28:14.538 | INFO     | src.connectors.coldwell_banker:scrape:28 - Scraping Coldwell Banker URL: https://www.coldwellbankerhomes.com/pa/wayne/agents/
+2026-02-06 18:28:18.603 | INFO     | src.connectors.coldwell_banker:scrape:40 - Processing page 1 for wayne
+2026-02-06 18:28:18.636 | INFO     | src.connectors.coldwell_banker:scrape:45 - Found 25 agents on page 1
+2026-02-06 18:28:18.707 | ERROR    | src.connectors.coldwell_banker:scrape:88 - Error parsing agent block 7: Locator.text_content: Error: strict mode violation: locator(".agent-block").nth(7).locator("a.phone-link") resolved to 2 elements:
+    1) <a class="phone-link" data-phone-type="mobile" href="tel:+1-610-291-6451">(610) 291-6451</a> aka get_by_role("link", name="(610) 291-")
+    2) <a class="phone-link" data-phone-type="direct" href="tel:+1-484-590-5961">(484) 590-5961</a> aka get_by_role("link", name="(484) 590-5961")
+
+Call log:
+  - waiting for locator(".agent-block").nth(7).locator("a.phone-link")
+
+2026-02-06 18:28:18.730 | ERROR    | src.connectors.coldwell_banker:scrape:88 - Error parsing agent block 10: Locator.text_content: Error: strict mode violation: locator(".agent-block").nth(10).locator("a.phone-link") resolved to 2 elements:
+    1) <a class="phone-link" data-phone-type="mobile" href="tel:+1-610-220-2896">(610) 220-2896</a> aka get_by_role("link", name="(610) 220-")
+    2) <a class="phone-link" data-phone-type="direct" href="tel:+1-484-590-5944">(484) 590-5944</a> aka get_by_role("link", name="(484) 590-5944")
+
+Call log:
+  - waiting for locator(".agent-block").nth(10).locator("a.phone-link")
+
+2026-02-06 18:28:18.741 | ERROR    | src.connectors.coldwell_banker:scrape:88 - Error parsing agent block 11: Locator.text_content: Error: strict mode violation: locator(".agent-block").nth(11).locator("a.phone-link") resolved to 2 elements:
+    1) <a class="phone-link" data-phone-type="mobile" href="tel:+1-302-562-4580">(302) 562-4580</a> aka get_by_role("link", name="(302) 562-")
+    2) <a class="phone-link" data-phone-type="direct" href="tel:+1-302-352-2228">(302) 352-2228</a> aka get_by_role("link", name="(302) 352-")
+
+Call log:
+  - waiting for locator(".agent-block").nth(11).locator("a.phone-link")
+
+2026-02-06 18:28:18.806 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/blue-bell/agent/lauren-perno/aid_256400/
+2026-02-06 18:28:19.471 | DEBUG    | src.scraper_manager:run:30 - Collected: Lauren Perno
+2026-02-06 18:28:20.848 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/blue-bell/agent/donna-mcgowan/aid_262546/
+2026-02-06 18:28:21.147 | DEBUG    | src.scraper_manager:run:30 - Collected: Donna McGowan
+2026-02-06 18:28:22.163 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/blue-bell/agent/renee-bartlett/aid_187418/
+2026-02-06 18:28:22.881 | DEBUG    | src.scraper_manager:run:30 - Collected: Renee Bartlett
+2026-02-06 18:28:24.163 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/blue-bell/agent/tracie-walsh/aid_254913/
+2026-02-06 18:28:24.723 | DEBUG    | src.scraper_manager:run:30 - Collected: Tracie Walsh
+2026-02-06 18:28:25.814 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/exton/agent/quinn-conover/aid_280984/
+2026-02-06 18:28:26.108 | DEBUG    | src.scraper_manager:run:30 - Collected: Quinn Conover
+2026-02-06 18:28:27.265 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/blue-bell/agent/curtis-spencer/aid_251866/
+2026-02-06 18:28:27.821 | DEBUG    | src.scraper_manager:run:30 - Collected: Curtis Spencer
+2026-02-06 18:28:29.294 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/exton/team/erica-lundmark-team/tid_3464/
+2026-02-06 18:28:29.888 | DEBUG    | src.scraper_manager:run:30 - Collected: Erica Lundmark Team
+2026-02-06 18:28:31.035 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/blue-bell/agent/david-caracausa/aid_150673/
+2026-02-06 18:28:31.320 | DEBUG    | src.scraper_manager:run:30 - Collected: David Caracausa
+2026-02-06 18:28:32.429 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/blue-bell/agent/kathy-sangiuliano/aid_169094/
+2026-02-06 18:28:33.034 | DEBUG    | src.scraper_manager:run:30 - Collected: Kathy Sangiuliano
+2026-02-06 18:28:34.451 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/exton/agent/victor-velez/aid_149167/
+2026-02-06 18:28:35.094 | DEBUG    | src.scraper_manager:run:30 - Collected: Victor Velez
+2026-02-06 18:28:36.219 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/blue-bell/agent/john-o-neill/aid_265722/
+2026-02-06 18:28:36.785 | DEBUG    | src.scraper_manager:run:30 - Collected: John O'Neill
+2026-02-06 18:28:37.988 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/exton/agent/janelle-thomas/aid_265731/
+2026-02-06 18:28:38.347 | DEBUG    | src.scraper_manager:run:30 - Collected: Janelle Thomas
+2026-02-06 18:28:39.700 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/exton/agent/brian-swavely/aid_290267/
+2026-02-06 18:28:40.200 | DEBUG    | src.scraper_manager:run:30 - Collected: Brian Swavely
+2026-02-06 18:28:41.545 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/blue-bell/agent/david-dupell/aid_285667/
+2026-02-06 18:28:41.994 | DEBUG    | src.scraper_manager:run:30 - Collected: David Dupell
+2026-02-06 18:28:43.061 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/blue-bell/agent/rebecca-schengrund/aid_262678/
+2026-02-06 18:28:43.542 | DEBUG    | src.scraper_manager:run:30 - Collected: Rebecca Schengrund
+2026-02-06 18:28:44.577 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/exton/agent/stacy-bernotas/aid_205943/
+2026-02-06 18:28:44.879 | DEBUG    | src.scraper_manager:run:30 - Collected: Stacy Bernotas
+2026-02-06 18:28:46.057 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/exton/agent/kim-seaman/aid_219758/
+2026-02-06 18:28:46.596 | DEBUG    | src.scraper_manager:run:30 - Collected: Kim Seaman
+2026-02-06 18:28:47.704 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/exton/agent/matthew-matt-bricketto/aid_278061/
+2026-02-06 18:28:48.494 | DEBUG    | src.scraper_manager:run:30 - Collected: Matthew "Matt" Bricketto
+2026-02-06 18:28:49.820 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/exton/agent/karen-hofmann/aid_176858/
+2026-02-06 18:28:50.194 | DEBUG    | src.scraper_manager:run:30 - Collected: Karen Hofmann
+2026-02-06 18:28:51.572 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/blue-bell/agent/sandra-sandy-bocchino/aid_92523/
+2026-02-06 18:28:52.121 | DEBUG    | src.scraper_manager:run:30 - Collected: Sandra "Sandy" Bocchino
+2026-02-06 18:28:53.445 | INFO     | src.connectors.coldwell_banker:scrape:96 - Visiting profile: https://www.coldwellbankerhomes.com/pa/exton/agent/wendy-caruso/aid_233597/
+2026-02-06 18:28:53.755 | DEBUG    | src.scraper_manager:run:30 - Collected: Wendy Caruso
+2026-02-06 18:28:55.276 | INFO     | src.scraper_manager:run:34 - Total raw agents collected: 21
+2026-02-06 18:28:55.276 | INFO     | src.scraper_manager:deduplicate:63 - Unique agents after deduplication: 21
+2026-02-06 18:28:55.281 | INFO     | src.scraper_manager:save_csv:76 - Saved 21 agents to contacts.csv

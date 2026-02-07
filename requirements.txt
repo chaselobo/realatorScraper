@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+playwright
+pandas
+streamlit
+pydantic
+loguru
+fake-useragent
+pytest
