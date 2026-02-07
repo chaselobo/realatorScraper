@@ -43,9 +43,9 @@ with st.expander("ℹ️ How to Use & ChatGPT Prompt Helper"):
     ### 🤖 ChatGPT Prompt for Towns/Zips
     Use this prompt to easily generate the lists for the sidebar:
     > "I need a list of towns and their zip codes for **[Insert Area/County Name]**. 
-    > Please provide two separate comma-separated lists:
-    > 1. A list of just the town names.
-    > 2. A list of just the zip codes."
+    > Please provide:
+    > 1. A list of towns formatted as '**Town, State**', with each town on a **new line** (no commas between lines).
+    > 2. A separate comma-separated list of just the zip codes."
     """)
 
 with st.sidebar:
