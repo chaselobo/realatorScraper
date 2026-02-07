@@ -18,6 +18,13 @@ from src.connectors.long_and_foster import LongAndFosterConnector
 from src.connectors.bhhs import BHHSConnector
 from src.utils import setup_logger
 import time
+from loguru import logger
+
+# Initialize session state
+if "results" not in st.session_state:
+    st.session_state["results"] = None
+if "logs" not in st.session_state:
+    st.session_state["logs"] = []
 
 st.set_page_config(page_title="Real Estate Agent Scraper", layout="wide")
 
@@ -56,16 +63,32 @@ with st.sidebar:
     output_file = st.text_input("Output Filename", "contacts.csv")
     
     run_btn = st.button("Run Scraper", type="primary")
+    
+    st.caption("Note: To stop the scraping process, use the 'Stop' button in the top-right corner of the app.")
+
+# Log Display Area
+st.subheader("📋 Progress Logs")
+log_placeholder = st.empty()
+
+if st.session_state["logs"]:
+    log_placeholder.code("".join(st.session_state["logs"][-20:]))
 
 if run_btn:
+    # Clear previous state
+    st.session_state["logs"] = []
+    st.session_state["results"] = None
+    
     towns = [t.strip() for t in towns_input.split(",")]
     zips = [z.strip() for z in zips_input.split(",")]
     
-    st.info("Starting scraper... This may take a while.")
-    
-    # Capture logs? For now we just run it and show result.
-    # To show live progress in Streamlit from internal logic is tricky without a callback or queue.
-    # We'll just run it synchronously.
+    # Define custom sink for Streamlit
+    def streamlit_sink(message):
+        st.session_state["logs"].append(message)
+        log_placeholder.code("".join(st.session_state["logs"][-20:]))
+
+    # Reset logger to output to our custom sink
+    logger.remove()
+    logger.add(streamlit_sink, format="{time:HH:mm:ss} | {level} | {message}")
     
     progress_bar = st.progress(0)
     status_text = st.empty()
@@ -90,21 +113,29 @@ if run_btn:
         progress_bar.progress(100)
         status_text.text("Done!")
         
-        st.success(f"Scraping completed! Found {len(manager.agents)} agents.")
-        
         if manager.agents:
             df = pd.DataFrame([a.to_dict() for a in manager.agents])
-            st.dataframe(df)
-            
-            with open(output_file, "rb") as f:
-                st.download_button(
-                    label="Download CSV",
-                    data=f,
-                    file_name=output_file,
-                    mime="text/csv"
-                )
+            st.session_state["results"] = df
+            st.success(f"Scraping completed! Found {len(manager.agents)} agents.")
         else:
             st.warning("No agents found.")
             
     except Exception as e:
         st.error(f"An error occurred: {e}")
+        logger.error(f"Error: {e}")
+
+# Persistent Results & Download Section
+if st.session_state["results"] is not None:
+    st.divider()
+    st.subheader("✅ Results")
+    st.dataframe(st.session_state["results"])
+    
+    csv = st.session_state["results"].to_csv(index=False).encode('utf-8')
+    
+    st.download_button(
+        label="Download CSV",
+        data=csv,
+        file_name=output_file,
+        mime="text/csv",
+        key="download-csv"
+    )
