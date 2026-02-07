@@ -85,8 +85,15 @@ if run_btn:
     zips = [z.strip() for z in zips_input.split(",")]
     
     # Validation
-    if any("," not in t for t in towns) and (use_cb or use_compass):
-        st.warning("⚠️ Some towns are missing state codes (e.g., 'Ridgewood, NJ'). Please format as 'Town, State' for accurate results.")
+    valid_towns = [t for t in towns if "," in t]
+    invalid_towns = [t for t in towns if "," not in t]
+
+    if invalid_towns:
+        if not valid_towns:
+            st.error("❌ **Input Error:** All provided towns are missing state codes. Please format them as '**Town, State**' (e.g., 'Ridgewood, NJ').")
+            st.stop()
+        else:
+            st.warning(f"⚠️ Skipping invalid inputs: {', '.join(invalid_towns)}. Please use 'Town, State' format.")
 
     # Define custom sink for Streamlit
     def streamlit_sink(message):
