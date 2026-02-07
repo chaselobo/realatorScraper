@@ -2,7 +2,7 @@ requests
 beautifulsoup4
 playwright
 pandas
-streamlit
+streamlit>=1.32.0
 pydantic
 loguru
 fake-useragent
