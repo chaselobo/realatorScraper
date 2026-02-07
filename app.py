@@ -4,10 +4,12 @@ import subprocess
 import os
 from src.config import DEFAULT_TOWNS, DEFAULT_ZIPS, DEFAULT_MAX_PAGES
 
+import sys
+
 # Ensure Playwright browsers are installed
 if not os.path.exists(os.path.expanduser("~/.cache/ms-playwright")):
     try:
-        subprocess.run(["playwright", "install", "chromium"], check=True)
+        subprocess.run([sys.executable, "-m", "playwright", "install", "chromium"], check=True)
     except Exception as e:
         st.error(f"Failed to install Playwright browsers: {e}")
 
