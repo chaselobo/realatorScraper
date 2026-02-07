@@ -28,13 +28,10 @@ class CompassConnector(BaseConnector):
                 slug = f"{town.lower().replace(' ', '-')}-{state.lower()}"
                 urls.append(f"https://www.compass.com/agents/locations/{slug}/")
         
-        # If no dynamic URLs (or only plain towns provided), use defaults if it looks like Main Line request,
-        # otherwise warn.
+        # If no dynamic URLs (or only plain towns provided), warn and return empty.
         if not urls:
-            logger.info("No 'Town, State' inputs found. Using default Main Line URLs.")
-            urls = self.start_urls
-        else:
-            logger.info(f"Generated dynamic Compass URLs: {urls}")
+            logger.warning("No valid 'Town, State' inputs found for Compass. Skipping.")
+            return
 
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)

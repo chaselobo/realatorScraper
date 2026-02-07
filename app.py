@@ -57,7 +57,7 @@ with st.sidebar:
     max_pages = st.number_input("Max Pages per Source", min_value=1, max_value=1000, value=DEFAULT_MAX_PAGES)
     
     st.subheader("Sources")
-    st.info("ℹ️ **Coverage Note:** \n- **Coldwell Banker & Compass:** Work nationwide (recommended).\n- **Long & Foster:** Works primarily in the Mid-Atlantic (PA, NJ, VA, DC, MD, DE).\n- **BHHS:** Currently limited to the Fox & Roach region (PA, NJ, DE).")
+    st.info("ℹ️ **Dynamic Search:** Connectors will search based on your 'Town, State' input. No default results are provided.")
     use_compass = st.checkbox("Compass", value=True)
     use_cb = st.checkbox("Coldwell Banker", value=True)
     use_lf = st.checkbox("Long & Foster", value=True)

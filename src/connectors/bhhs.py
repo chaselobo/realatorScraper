@@ -15,22 +15,33 @@ class BHHSConnector(BaseConnector):
         self.base_url = "https://wayne-devon.foxroach.com/roster/agents"
 
     def scrape(self, towns: List[str], zips: List[str], max_pages: int) -> Generator[Agent, None, None]:
-        url = f"{self.base_url}?pagesize=100"
+        urls = []
+        for town_input in towns:
+            if "," in town_input:
+                town, state = [x.strip() for x in town_input.split(",", 1)]
+                # Attempt dynamic search on main Fox & Roach site
+                # Pattern guess: https://www.foxroach.com/roster/agents?city=Town&state=State
+                urls.append(f"https://www.foxroach.com/roster/agents?city={town}&state={state}")
         
+        if not urls:
+            logger.warning("No 'Town, State' inputs for BHHS. Skipping.")
+            return
+
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
             context = browser.new_context(user_agent=USER_AGENT)
             page = context.new_page()
 
-            logger.info(f"Scraping BHHS URL: {url}")
-            try:
-                page.goto(url, timeout=60000)
-                page.wait_for_timeout(2000)
-            except Exception as e:
-                logger.error(f"Failed to load {url}: {e}")
-                return
+            for url in urls:
+                logger.info(f"Scraping BHHS URL: {url}")
+                try:
+                    page.goto(url, timeout=60000)
+                    page.wait_for_timeout(2000)
+                except Exception as e:
+                    logger.error(f"Failed to load {url}: {e}")
+                    continue
 
-            cards = page.locator('div.rn-agent-roster-card')
+                cards = page.locator('div.rn-agent-roster-card')
             count = cards.count()
             logger.info(f"Found {count} BHHS agents")
             

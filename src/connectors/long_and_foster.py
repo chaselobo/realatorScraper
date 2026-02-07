@@ -29,8 +29,8 @@ class LongAndFosterConnector(BaseConnector):
                     urls.append(f"https://www.longandfoster.com/real-estate-agents/{slug}")
             
             if not urls:
-                logger.info("No 'Town, State' provided, using default office URL")
-                urls = [self.base_url]
+                logger.warning("No valid 'Town, State' inputs found for Long & Foster. Skipping.")
+                return
 
             for url in urls:
                 logger.info(f"Scraping Long & Foster URL: {url}")
