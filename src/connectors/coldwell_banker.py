@@ -22,9 +22,18 @@ class CBConnector(BaseConnector):
             context = browser.new_context(user_agent=USER_AGENT)
             page = context.new_page()
 
-            for town in towns:
-                town_slug = town.lower().replace(" ", "-")
-                url = f"{self.base_url}/pa/{town_slug}/agents/"
+            for town_input in towns:
+                # Parse "Town, State" from input if available
+                if "," in town_input:
+                    town_name, state_code = [part.strip() for part in town_input.split(",", 1)]
+                else:
+                    town_name = town_input
+                    state_code = "pa" # Default to PA
+
+                town_slug = town_name.lower().replace(" ", "-")
+                state_slug = state_code.lower()
+                
+                url = f"{self.base_url}/{state_slug}/{town_slug}/agents/"
                 logger.info(f"Scraping Coldwell Banker URL: {url}")
                 
                 try:
@@ -37,7 +46,7 @@ class CBConnector(BaseConnector):
                 # Pagination loop
                 current_page = 1
                 while current_page <= max_pages:
-                    logger.info(f"Processing page {current_page} for {town}")
+                    logger.info(f"Processing page {current_page} for {town_name}")
                     
                     # Find agent blocks
                     agent_blocks = page.locator('.agent-block')
@@ -86,7 +95,8 @@ class CBConnector(BaseConnector):
                                 "phone": phone,
                                 "office": office,
                                 "profile_url": profile_url,
-                                "town": town
+                                "town": town_name,
+                                "state": state_code.upper()
                             })
                             
                         except Exception as e:
@@ -117,7 +127,7 @@ class CBConnector(BaseConnector):
                                 phone=agent_data["phone"],
                                 brokerage=f"Coldwell Banker - {agent_data['office']}",
                                 city=agent_data["town"].title(),
-                                state="PA",
+                                state=agent_data["state"],
                                 source="Coldwell Banker",
                                 source_url=agent_data["profile_url"],
                                 scraped_at=time.strftime("%Y-%m-%d %H:%M:%S")
@@ -137,7 +147,7 @@ class CBConnector(BaseConnector):
                                 phone=agent_data["phone"],
                                 brokerage=f"Coldwell Banker - {agent_data['office']}",
                                 city=agent_data["town"].title(),
-                                state="PA",
+                                state=agent_data["state"],
                                 source="Coldwell Banker",
                                 source_url=agent_data["profile_url"],
                                 scraped_at=time.strftime("%Y-%m-%d %H:%M:%S")
