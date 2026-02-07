@@ -51,7 +51,7 @@ with st.expander("ℹ️ How to Use & ChatGPT Prompt Helper"):
 with st.sidebar:
     st.header("Configuration")
     
-    towns_input = st.text_area("Towns (comma-separated)", ", ".join(DEFAULT_TOWNS))
+    towns_input = st.text_area("Towns (Format: 'Town, State' - one per line)", "\n".join(DEFAULT_TOWNS))
     zips_input = st.text_area("Zip Codes (comma-separated)", ", ".join(DEFAULT_ZIPS))
     
     max_pages = st.number_input("Max Pages per Source", min_value=1, max_value=1000, value=DEFAULT_MAX_PAGES)
@@ -81,7 +81,8 @@ if run_btn:
     st.session_state["logs"] = []
     st.session_state["results"] = None
     
-    towns = [t.strip() for t in towns_input.split(",")]
+    # Split by newline to handle "Town, State" correctly
+    towns = [t.strip() for t in towns_input.split("\n") if t.strip()]
     zips = [z.strip() for z in zips_input.split(",")]
     
     # Validation
