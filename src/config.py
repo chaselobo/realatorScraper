@@ -1,14 +1,7 @@
 # Target Geography
-DEFAULT_TOWNS = [
-    "Villanova", "Bryn Mawr", "Wayne", "Ardmore", "Haverford", 
-    "Wynnewood", "Narberth", "Radnor", "Devon", "Berwyn", 
-    "Malvern", "Gladwyne", "Bala Cynwyd"
-]
+DEFAULT_TOWNS = []
 
-DEFAULT_ZIPS = [
-    "19085", "19010", "19003", "19096", "19004", "19041", 
-    "19087", "19312", "19301", "19066", "19072", "19035"
-]
+DEFAULT_ZIPS = []
 
 # Scraping Settings
 DEFAULT_RATE_LIMIT = 1.0  # seconds between requests
