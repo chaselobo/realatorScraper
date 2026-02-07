@@ -74,7 +74,7 @@ class BHHSConnector(BaseConnector):
                         phone=phone,
                         brokerage="BHHS Fox & Roach",
                         city="Wayne", 
-                        state="PA",
+                        state="",
                         zip_code="19087",
                         source=self.name,
                         source_url=profile_url or url,

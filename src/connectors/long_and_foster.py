@@ -93,7 +93,7 @@ class LongAndFosterConnector(BaseConnector):
                         phone=phone,
                         brokerage="Long & Foster",
                         city="Wayne", 
-                        state="PA",
+                        state="",
                         zip_code="19087",
                         source=self.name,
                         source_url=p_url,

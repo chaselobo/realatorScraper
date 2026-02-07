@@ -28,7 +28,7 @@ class CBConnector(BaseConnector):
                     town_name, state_code = [part.strip() for part in town_input.split(",", 1)]
                 else:
                     town_name = town_input
-                    state_code = "pa" # Default to PA
+                    state_code = "" # Default to blank
 
                 town_slug = town_name.lower().replace(" ", "-")
                 state_slug = state_code.lower()
