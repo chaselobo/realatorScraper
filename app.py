@@ -57,6 +57,7 @@ with st.sidebar:
     max_pages = st.number_input("Max Pages per Source", min_value=1, max_value=1000, value=DEFAULT_MAX_PAGES)
     
     st.subheader("Sources")
+    st.warning("⚠️ **Note for Non-PA Users:** Compass, BHHS, and Long & Foster are currently optimized for the Philadelphia Main Line. For other areas (e.g., NJ, NY), please select **Coldwell Banker** only to avoid incorrect results.")
     use_compass = st.checkbox("Compass", value=True)
     use_cb = st.checkbox("Coldwell Banker", value=True)
     use_lf = st.checkbox("Long & Foster", value=True)
@@ -83,6 +84,10 @@ if run_btn:
     towns = [t.strip() for t in towns_input.split(",")]
     zips = [z.strip() for z in zips_input.split(",")]
     
+    # Validation
+    if any("," not in t for t in towns) and any(use_cb, use_compass):
+        st.warning("⚠️ Some towns are missing state codes (e.g., 'Ridgewood, NJ'). defaulting to PA for those entries.")
+
     # Define custom sink for Streamlit
     def streamlit_sink(message):
         st.session_state["logs"].append(message)

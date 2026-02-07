@@ -17,15 +17,39 @@ class CompassConnector(BaseConnector):
         ]
 
     def scrape(self, towns: List[str], zips: List[str], max_pages: int) -> Generator[Agent, None, None]:
+        # Determine URLs to scrape
+        urls = []
+        
+        # Try to generate dynamic URLs from input
+        for town_input in towns:
+            if "," in town_input:
+                town, state = [x.strip() for x in town_input.split(",", 1)]
+                # Pattern: https://www.compass.com/agents/locations/ridgewood-nj/
+                slug = f"{town.lower().replace(' ', '-')}-{state.lower()}"
+                urls.append(f"https://www.compass.com/agents/locations/{slug}/")
+        
+        # If no dynamic URLs (or only plain towns provided), use defaults if it looks like Main Line request,
+        # otherwise warn.
+        if not urls:
+            logger.info("No 'Town, State' inputs found. Using default Main Line URLs.")
+            urls = self.start_urls
+        else:
+            logger.info(f"Generated dynamic Compass URLs: {urls}")
+
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
             context = browser.new_context(user_agent=USER_AGENT)
             page = context.new_page()
 
-            for url in self.start_urls:
+            for url in urls:
                 logger.info(f"Scraping Compass URL: {url}")
                 try:
                     page.goto(url, timeout=60000)
+                    # Check for 404 or redirect to home
+                    if page.url == "https://www.compass.com/" or "404" in page.title():
+                        logger.warning(f"URL {url} redirected to home or 404. Skipping.")
+                        continue
+                        
                     page.wait_for_selector('[class*="agentCard"]', timeout=10000)
                 except Exception as e:
                     logger.error(f"Failed to load {url}: {e}")
