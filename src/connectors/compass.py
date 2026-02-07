@@ -10,11 +10,7 @@ import time
 class CompassConnector(BaseConnector):
     def __init__(self, rate_limit: float = 1.0):
         super().__init__("Compass", rate_limit)
-        # Main Line and Philadelphia URLs
-        self.start_urls = [
-            "https://www.compass.com/agents/locations/main-line-bryn-mawr-pa/15715/",
-            "https://www.compass.com/agents/locations/philadelphia-pa/14527/"
-        ]
+        self.start_urls = []
 
     def scrape(self, towns: List[str], zips: List[str], max_pages: int) -> Generator[Agent, None, None]:
         # Determine URLs to scrape

@@ -14,8 +14,8 @@ class CBConnector(BaseConnector):
 
     def scrape(self, towns: List[str], zips: List[str], max_pages: int) -> Generator[Agent, None, None]:
         if not towns:
-            # Default Main Line towns
-            towns = ["wayne", "bryn-mawr", "villanova", "devon", "paoli", "berwyn", "malvern", "ardmore", "newtown-square"]
+            logger.warning("No towns provided for Coldwell Banker.")
+            return
         
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
@@ -24,12 +24,11 @@ class CBConnector(BaseConnector):
 
             for town_input in towns:
                 # Parse "Town, State" from input if available
-                if "," in town_input:
-                    town_name, state_code = [part.strip() for part in town_input.split(",", 1)]
-                else:
-                    town_name = town_input
-                    state_code = "" # Default to blank
+                if "," not in town_input:
+                    logger.warning(f"Skipping '{town_input}' for Coldwell Banker - missing state (e.g. 'Town, State').")
+                    continue
 
+                town_name, state_code = [part.strip() for part in town_input.split(",", 1)]
                 town_slug = town_name.lower().replace(" ", "-")
                 state_slug = state_code.lower()
                 
